@@ -169,15 +169,6 @@ h5 {
 }
 
 
-/* 
-@media (max-width: 800) {
-    .container {
-        width: 400px;
-        margin: 0 auto;
-    }
-} */
-
-
 /* header */
 
 header nav {
@@ -211,7 +202,7 @@ header .logo {
 }
 
 
-/* tablet */
+/* tablet header */
 
 @media (max-width: 800px) {
     .container {
@@ -222,15 +213,41 @@ header .logo {
         flex-direction: column-reverse;
     }
     header .logo {
-        width: 150px;
+        width: 23%;
         height: auto;
-        position: relative;
-        left: 330px;
+        margin-left: 310px;
     }
     header nav a {
         width: 100%;
         position: relative;
         left: 90px;
+    }
+}
+
+
+/* phone header */
+
+@media (max-width: 500px) {
+    .container {
+        width: 500px;
+    }
+    header .logo {
+        margin-left: 198px;
+    }
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 90px;
+    }
+    header nav a {
+        text-align: center;
+        padding: 22px;
+        border-bottom: 1px solid black;
+    }
+    header nav a:first-child {
+        border-top: 1px solid black;
     }
 }
 
@@ -293,6 +310,18 @@ header .logo {
     display: flex;
 }
 
+@media (max-width: 500px) {
+    .main-content .top-content {
+        display: block;
+    }
+    .main-content .top-content p {
+        width: 480px;
+    }
+    .main-content .top-content .text-content:last-child {
+        margin-top: 20px;
+    }
+}
+
 .main-content .top-content .text-content {
     width: 410px;
     display: inline-block;
@@ -320,6 +349,21 @@ header .logo {
     margin-top: 37px;
     padding: 0 10px;
     display: flex;
+}
+
+@media (max-width: 500px) {
+    .main-content .bottom-content {
+        display: block;
+    }
+    .main-content .bottom-content .text-content {
+        margin-top: 20px;
+    }
+    .main-content .bottom-content .text-content:first-child {
+        margin-top: -20px;
+    }
+    .main-content .bottom-content p {
+        width: 480px;
+    }
 }
 
 .main-content .bottom-content .text-content {
